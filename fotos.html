@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <!-- comando para reconhecer a grafia latina -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Site da Associação dos Moradores de Estreito">
+    <meta name="keywords" content="associação, estreito, morador">
+    <meta name="author" content="Erlon Pereira Rodrigues">
+    <title>Associação dos Moradores de Estreito</title>
+
+    <!--   faz a ligação desta página HTML com os estilos CSS   -->
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="_css/fotos.css" />
+  </head>
+    <!--   faz a ligação desta página HTML com as funções JavaScript -->
+    <script type="text/javascript" language="javascript" src="_javascript/funcoes.js"></script>
+<!-- ####################################################################### -->
+  <body>
+    <div id="interface"> <!-- container em posição absoluta que delimita a interface da página -->
+      <!-- CABEÇALHO DA PÁGINA -->
+      <header id="cabecalho"> <!-- comando header define um cabeçalho semânticamente -->
+  
+        <!-- TÍTULO E SUBTÍTULO DO SITE -->
+        <hgroup> <!--comando hgroup agrupa títulos semânticamente-->
+          <h1>associação dos moradores de estreito</h1>
+            <h2>Página com informações e serviços aos moradores de Estreito</h2>
+        </hgroup>
+  
+        <!-- ícone padrão do site -->
+        <img id="icone" src="_images/icone-fotos.png"/>
+  
+        <!-- menu do site -->
+        <nav id="menu">
+          <h1>Menu Principal</h1>
+          <ul type="disc">
+            <li onmouseover="mudaIcone('_images/icone-pagina-inicial.png')" onmouseout="mudaIcone('_images/icone-fotos.png')"><a class="link-menu" href="index.html" target="_self">página inicial</a></li> <!--   target="_self" faz referência ao próprio site   -->
+            <li onmouseover="mudaIcone('_images/icone-associacao.png')" onmouseout="mudaIcone('_images/icone-fotos.png')"><a class="link-menu" href="associacao.html" target="_self">a associação</a></li>
+            <li onmouseover="mudaIcone('_images/icone-fotos.png')" onmouseout="mudaIcone('_images/icone-fotos.png')"><a class="link-menu" href="fotos.html" target="_self">Fotos</a></li>
+            <li onmouseover="mudaIcone('_images/icone-noticias.png')" onmouseout="mudaIcone('_images/icone-fotos.png')"><a class="link-menu" href="noticias.html" target="_self">notícias</a></li>
+            <li onmouseover="mudaIcone('_images/icone-cadastro.png')" onmouseout="mudaIcone('_images/icone-fotos.png')"><a class="link-menu" href="cadastro.html" target="_self">cadastro</a></li>
+          </ul>
+        </nav>
+      </header>
+<!-- ####################################################################### -->
+      <!-- CORPO DO SITE -->
+      <section id="corpo-sem-divisao">
+        
+        <!-- ARTIGO PRINCIPAL -->
+        <article id="artigo-principal">
+          
+          <!-- CABEÇALHO DO ARTIGO PRINCIPAL -->
+          <header id="cabecalho-artigo-principal">
+            <hgroup>
+              <h3>Fotos > Eventos e reuniões</h3>
+              <h1>Galeria de fotos da associação</h1>
+              <h2>por Redator</h2>
+              <h3 class="coloca-texto-a-direita">Atualizado em 20/06/2016</h3>
+            </hgroup>
+          </header>
+          <!-- FIM DO CABEÇALHO DO ARTIGO PRINCIPAL -->
+
+            <p>Veja a nossa galeria de fotos com algumas das várias atividades, reuniões e eventos desenvolvidos pela Associação de Moradores de Estreito.</p>
+            <p>Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+            
+            <!-- ÁLBUM DE FOTOS -->
+            <ul id="album-fotos">
+              <!-- usou a tag SPAN para colocar o texto entre essas tags como legenda das fotos através do CSS -->
+              <li id="foto01"><span>Rua Itumbiara</span></li>
+              <li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+              <li id="foto03"><span>Leve e compacto</span></li>
+              <li id="foto04"><span>Usina Hidrelétrica</span></li>
+              <li id="foto05"><span>Casa de Visita</span></li>
+              <li id="foto06"><span>Agremiação Recreativa de Estreito</span></li> 
+            </ul>
+        </article>
+      </section>  
+<!-- ####################################################################### -->
+      <!-- RODAPÉ DO SITE -->
+      <footer id="rodape">
+        <p>
+            <a href="#interface">Voltar ao início da página</a>
+            <br/>Página oficial da Associação dos Moradores de Estreito
+            <br/> Site desenvolvido em HTML5, CCS3 e JavaScript por <a href="https://erlonpr.blogspot.com.br/" target="_blank">Érlon Pereira Rodrigues</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
