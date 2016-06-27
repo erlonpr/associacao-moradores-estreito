@@ -43,17 +43,47 @@
     </header>
 <!-- ####################################################################### -->
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+      <section id="corpo-sem-divisao">
 
+        <!-- ARTIGO PRINCIPAL -->
+        <article id="artigo-principal">
 
-Áudio e Vídeo
+          <!-- CABEÇALHO DO ARTIGO PRINCIPAL -->
+          <header id="cabecalho-artigo-principal">
+            <hgroup>
+              <h3>Associação > Notícias</h3>
+              <h1>Veja todas as notícias da associação</h1>
+              <h2>por Redator</h2>
+              <h3 class="coloca-texto-a-direita">Atualizado em 14/06/2016</h3>
+            </hgroup>
+          </header>
 
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
+          <!-- div que irá conter o áudio e o vídeo -->
+          <div id="tv-radio">
+            <!-- tag AUDIO é usada para reproduzir uma música   -->
+            <audio id="musica" controls="controls">
+              <!-- para músicas no formato mp3 -->
+              <source src="http://www.rodrigofarah.com.br/arquivos/rod/RodrigoFarah-FixYou.mp3" type="audio/mpeg"/>
+              <!-- para músicas no formato m4a -->
+              <source src="http://www.rodrigofarah.com.br/arquivos/rod/RodrigoFarah-FixYou.m4a" type="audio/x-aac"/>
+              <!-- para músicas no formato ogg -->
+              <source src="http://www.rodrigofarah.com.br/arquivos/rod/RodrigoFarah-FixYou.ogg" type="audio/ogg"/>
+              Desculpe, não foi possível carregar o áudio.
+            </audio>
+            <!-- tag VIDEO é usada para reproduzir uma vídeo   -->
+            <video id="filme" controls="controls" poster="_images/video-mini03.jpg">
+              <!-- para vídeos no formato mp4 -->
+              <source src="http://download.wavetlan.com/SVV/Media/HTTP/H264/Talkinghead_Media/H264_test1_Talkinghead_mp4_480x360.mp4" type="video/mp4"/>
+              <!-- para vídeos no formato webm -->
+              <source src="http://video.webmfiles.org/big-buck-bunny_trailer.webm" type="video/webm,"/>
+              <!-- para vídeos no formato ogv -->
+              <source src="http://ripe.ufba.br/articles/0000/3246/web/tiny.ogv" type="video/ogg"/>
+              Desculpe, não foi possível carregar o vídeo.
+            </video>
+          </div>
 
+        </article>
+      </section>
 <!-- ####################################################################### -->
       <!-- RODAPÉ DO SITE -->
       <footer id="rodape">
