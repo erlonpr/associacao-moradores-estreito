@@ -1,12 +1,14 @@
 /* comando para reconhecer a grafia latina */
 @charset "UTF8";
 
-/*importar modelo de fontes do Google Fonts*/
-@import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans);
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+/*como para importar modelo de fontes do Google Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans); /* fonte do título do site */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web); /* fonte do subtítulo e corpo */
 
+/* formtação usada em todo o corpo das páginas do site */
 body {
-  font-family: Arial, sans-serif; /* tipo de fonte usado em TODO texto que faz parte do conteúdo (corpo) do site */
+  font-family: 'Titillium Web', sans-serif; /* tipo de fonte usado em todo texto que faz parte do conteúdo (corpo) do site */
+  font-size: 12pt; /* tamanho da fonte */
   background-color: #dddddd;  /* cor de fundo do corpo do site */
   color: rgba(0, 0, 0, 1); /* cor do texto da página */
 }
@@ -57,13 +59,12 @@ header#cabecalho {
   */
 }
 
-/* ############################ TÍTULO DO SITE ############################ */
-
-/* formatação dos H1 dentro do cabeçalho */
+/* ############################# TÍTULO DO SITE ############################# */
 header#cabecalho h1 {
     font-family: 'Bubblegum Sans', cursive; /* tipo da fonte */
-    font-size: 28pt;
-    color: #606060;
+    font-size: 26pt;
+    /* color: #606060; cor cinza padrão */
+    color: #45b09a;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     text-transform: uppercase; /* coloca em letra maiúscula */
     padding: 0px;
@@ -71,7 +72,7 @@ header#cabecalho h1 {
     margin-bottom: 0px;
 }
 
-/* formatação dos H2 dentro do cabeçalho */
+/* ########################### SUBTÍTULO DO SITE ############################ */
 header#cabecalho h2 {
     font-family: 'Titillium Web', sans-serif; /* tipo da fonte */
     font-size: 15pt;
@@ -225,7 +226,7 @@ table#tabela {
   border: 1px solid #606060; /* define uma borda ao redor da tabela */
   border-spacing: 0px; /* remove espaço entre as células da tabela, pois está com 0 pixels */
   margin-left: auto; /* para centralizar a tabela à esquerda*/
-  margin-right: auto; /* para centralizar a tabela à direita*/ 
+  margin-right: auto; /* para centralizar a tabela à direita*/
 }
 
 /* formatação da célula da tabela */
