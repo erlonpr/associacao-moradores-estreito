@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulário &copy;</title>
+    <meta charset="UTF-8" />
+    <style>
+        @font-face {
+            font-family: 'font';
+            src: url("font1.ttf");
+        }
+
+        section#content {
+            position: relative;
+            width: 960px;
+            height: 500px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin: auto;
+            background: url("_img.png") no-repeat;
+            background-size: 1280px 720px;
+        }
+
+        <!-- --> form#flogon {
+            position: absolute;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            background: #323232;
+            width: 300px;
+            top: 50%;
+            left: 50%;
+            margin-top: -105px;
+            margin-left: -150px;
+        }
+
+        form#flogon fieldset {
+            border: none;
+        }
+
+        form#flogon p {
+            margin: 0px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 12pt;
+            color: #fff;
+        }
+
+        form#flogon a {
+            color: #D5D5D5;
+            font-size: 10pt;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        form#flogon a:hover {
+            color: #EAEAEA;
+        }
+
+        form#flogon input {
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            width: 250px;
+        }
+
+        form#flogon input#clogon {
+            width: 100px;
+            background: #F7F7F7;
+            transition: 0.5s;
+        }
+
+        form#flogon input#clogon:hover {
+            background: #EBEBEB;
+        }
+
+        h1 {
+            font-size: 5em;
+            font-family: 'font';
+            text-align: center;
+            margin: 0px;
+            text-shadow: 1px 1px 0px rgb(255, 255, 255);
+        }
+
+        h2 {
+            font-family: 'font';
+            font-size: 2em;
+            text-align: center;
+            color: #000;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="content">
+        <h1>Faça seu Login!</h1>
+        <form id="flogon">
+            <fieldset>
+                <p>
+                    <label for="clogin">Login</label>
+                </p>
+                <input type="text" name="tlogin" id="clogin" maxlength="30" placeholder="Login de Usúario" />
+                <p>
+                    <label for="csenha">Senha</label>
+                </p>
+                <input type="password" name="tsenha" id="csenha" maxlength="30" placeholder="Senha de Usúario" />
+                <p><a href="#">Esqueceu a Senha</a></p>
+                <input type="submit" name="tlogon" id="clogon" value="Logar" />
+            </fieldset>
+        </form>
+    </section>
+    <h2>Exemplo de Formulário de Login! &copy;</h2>
+</body>
+
+</html>
