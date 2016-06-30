@@ -61,46 +61,76 @@
           </header>
 
             <!-- tag FORM define um formulário -->
-            <form>
+            <form method="post" id="fContato" action="mailto:erlonpr@gmail.com">
 
               <fieldset id="usuario"> <!-- a tag FIELDSET define um conjunto de campos de um formulário -->
                 <legend>Identificação do Usuário</legend> <!-- a tag LEGEND define o título de um conjunto de campos (FIELDSET) de um formulário -->
-                <!-- campos do formulário com dados do usuário -->
-                <p><label for="cNome">Nome: </label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="nome completo"> </p>
-                <p><label for="cSenha">Senha: </label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"> </p>
-                <p><label for="cEmail">E-mail: </label> <input type="email" name="tEmail" id="cEmail" size="20" maxlength ="40" placeholder="e-mail"> </p>
-                <fieldset id="sexo">
-                  <legend>Sexo:</legend>
-                    <input type="radio" name="tSexo" id="cMasc" checked="true"> <label for="cMasc">Masculino</label>
-                    <br/>
-                    <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label>
-                </fieldset>
-                <p><label for="cNasc">Data de Nascimento: </label> <input type="date" name="tNasc" id="cNasc"></p>
-                <!-- ########################################## -->
+                  <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="nome completo"> </p>
+                  <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"> </p>
+                  <p><label for="cEmail">E-mail:</label> <input type="email" name="tEmail" id="cEmail" size="20" maxlength ="40" placeholder="e-mail"> </p>
+                  <fieldset id="sexo">
+                    <legend>Sexo:</legend>
+                      <input type="radio" name="tSexo" id="cMasc" checked="true"> <label for="cMasc">Masculino</label>
+                      <br/>
+                      <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label>
+                  </fieldset>
+                  <p><label for="cNasc">Data de Nascimento:</label> <input type="date" name="tNasc" id="cNasc"></p>
               </fieldset>
 
               <fieldset id="endereco">
                 <legend>Endereço do Usuário</legend>
-                <!-- campos do formulário com dados de endereço -->
-                <p><label for="cLogr">Logradouro: </label> <input type="text" name="tLogr" id="cLogr" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."> </p>
-                <p><label for="cNum">Número: </label> <input type="number" name="tNum" id="cNum" min="0" max="999" placeholder="Número"> </p>
-                Estado:
-                Cidade:
-                <!-- ########################################## -->
+                  <p><label for="cLogr">Logradouro:</label> <input type="text" name="tLogr" id="cLogr" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."> </p>
+                  <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="999" placeholder="Número"> </p>
+                  <p>
+                    <label for="cEst">Estado:</label>
+                      <select name="tEst" id="cEst">
+                        <option>Acre</option>
+                        <option>Alagoas</option>
+                        <option>Amapá</option>
+                        <option>Amazonas</option>
+                        <option>Bahia</option>
+                        <option>Ceará</option>
+                        <option>Distrito Federal</option>
+                        <option>Espírito Santo</option>
+                        <option>Goiás</option>
+                        <option>Maranhão</option>
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option>Minas Gerais</option>
+                        <option>Pará</option>
+                        <option>Paraíba</option>
+                        <option>Paraná</option>
+                        <option>Pernambuco</option>
+                        <option>Piauí</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Rondônia</option>
+                        <option>Roraima</option>
+                        <option>Santa Catarina</option>
+                        <option selected>São Paulo</option>
+                        <option>Sergipe</option>
+                        <option>Tocantins</option>
+                      </select>
+                  </p>
+                  <p>
+                    <label for="cCid">Cidade:</label>
+                    <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Nome da cidade">
+                  </p>
               </fieldset>
 
               <fieldset id="mensagem">
               <legend>Mensagem do Usuário</legend>
-                Grau de Urgência:
-                Mensagem:
+                <p><label for="cUrg">Grau de Urgência: </label> </p>
+                <p><label for="cMsg">Mensagem: </label> </p>
               </fieldset>
 
               <fieldset id="pedido">
                 <legend>Quero um Google Glass</legend>
-                Gostaria de adquirir um Google Glass quando disponível
-                  Cor:
-                  Quantidade:
-                  Preço Total: R$
+                  <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label> </p>
+                    <p><label for="cCor">Cor: </label> </p>
+                    <p><label for="cQtd">Quantidade: </label> </p>
+                    <p><label for="cTot">Preço Total: R$ </label> </p>
               </fieldset>
 
               [BOTÃO ENVIAR]

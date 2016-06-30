@@ -136,7 +136,7 @@ nav#menu ul {
   text-transform: uppercase; /* coloca todos itens da lista não-ordenada em letra maiúscula */
   position: absolute; /* faz com que a lista não-ordenada tenha um posição absoluta, com isso eu posso colocá-la em qualquer lugar que eu queira na página (portanto o menu tem uma posição absoluta)*/
   top: -20px; /* distância entre a lista não-ordenada e a parte superior da página */
-  left: 769px; /* distância entre a lista não-ordenada e a parte esquerda da página */
+  left: 840px; /* distância entre a lista não-ordenada e a parte esquerda da página */
 }
 
 /* formatação dos itens da lista não-ordenada do menu */
