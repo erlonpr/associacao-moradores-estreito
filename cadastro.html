@@ -12,11 +12,11 @@
     <!--   faz a ligação desta página HTML com os estilos CSS   -->
     <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
     <link rel="stylesheet" type="text/css" href="_css/form.css"/>
-
 </head>
+
     <!--   faz a ligação desta página HTML com as funções JavaScript -->
     <script type="text/javascript" language="javascript" src="_javascript/funcoes.js"></script>
-<!-- ####################################################################### -->
+
 <body>
   <div id="interface"> <!-- container em posição absoluta que delimita a interface da página -->
     <!-- CABEÇALHO DA PÁGINA -->
@@ -60,8 +60,12 @@
             <!-- </hgroup> -->
           </header>
 
-            <!-- tag FORM define um formulário -->
-            <form method="post" id="fContato" action="mailto:erlonpr@gmail.com">
+            <!--
+            - a tag FORM define um formulário
+            - a tag ACTION define uma ação a ser realizada com os dados informados no formulário
+            - a tag ONINPUT define um evento que irá ser realizado a cada nova entrada de dados no formulário
+            -->
+            <form method="post" id="fContato" action="mailto:erlonpr@gmail.com" oninput="calc_total();">
 
               <fieldset id="usuario"> <!-- a tag FIELDSET define um conjunto de campos de um formulário -->
                 <legend>Identificação do Usuário</legend> <!-- a tag LEGEND define o título de um conjunto de campos (FIELDSET) de um formulário -->
@@ -84,56 +88,97 @@
                   <p>
                     <label for="cEst">Estado:</label>
                       <select name="tEst" id="cEst">
-                        <option>Acre</option>
-                        <option>Alagoas</option>
-                        <option>Amapá</option>
-                        <option>Amazonas</option>
-                        <option>Bahia</option>
-                        <option>Ceará</option>
-                        <option>Distrito Federal</option>
-                        <option>Espírito Santo</option>
-                        <option>Goiás</option>
-                        <option>Maranhão</option>
-                        <option>Mato Grosso</option>
-                        <option>Mato Grosso do Sul</option>
-                        <option>Minas Gerais</option>
-                        <option>Pará</option>
-                        <option>Paraíba</option>
-                        <option>Paraná</option>
-                        <option>Pernambuco</option>
-                        <option>Piauí</option>
-                        <option>Rio de Janeiro</option>
-                        <option>Rio Grande do Norte</option>
-                        <option>Rio Grande do Sul</option>
-                        <option>Rondônia</option>
-                        <option>Roraima</option>
-                        <option>Santa Catarina</option>
-                        <option selected>São Paulo</option>
-                        <option>Sergipe</option>
-                        <option>Tocantins</option>
+
+                        <!-- estados brasileiros separados por regiões -->
+                        <optgroup label="Região Centro Oeste">
+                          <option value="GO">Goiás</option>
+                          <option value="MT">Mato Grosso</option>
+                          <option value="MS">Mato Grosso do Sul</option>
+                          <option value="DF">Distrito Federal</option>
+                        </optgroup>
+
+                        <optgroup label="Região Norte">
+                          <option value="AM">Amazonas</option>
+                          <option value="AC">Acre</option>
+                          <option value="RO">Rondônia</option>
+                          <option value="RR">Roraima</option>
+                          <option value="AP">Amapá</option>
+                          <option value="TO">Tocantins</option>
+                          <option value="PA">Pará</option>
+                        </optgroup>
+
+                        <optgroup label="Região Nordeste">
+                          <option value="MA">Maranhão</option>
+                          <option value="PI">Piauí</option>
+                          <option value="CE">Ceará</option>
+                          <option value="RN">Rio Grande do Norte</option>
+                          <option value="PB">Paraíba</option>
+                          <option value="PE">Pernambuco</option>
+                          <option value="SE">Sergipe</option>
+                          <option value="AL">Alagoas</option>
+                          <option value="BA">Bahia</option>
+                        </optgroup>
+
+                        <optgroup label="Região Sudeste">
+                          <option value="SP" selected>São Paulo</option>
+                          <option value="MG">Minas Gerais</option>
+                          <option value="RJ">Rio de Janeiro</option>
+                          <option value="ES">Espírito Santo</option>
+                        </optgroup>
+
+                        <optgroup label="Região Sul">
+                          <option value="PR">Paraná</option>
+                          <option value="SC">Santa Catarina</option>
+                          <option value="RS">Rio Grande do Sul</option>
+                        </optgroup>
+
                       </select>
                   </p>
                   <p>
                     <label for="cCid">Cidade:</label>
-                    <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Nome da cidade">
+                    <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Nome da cidade" list="dlCidades">
                   </p>
+                  <datalist id="dlCidades">
+                    <option value="São Paulo"></option>
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Salvador"></option>
+                    <option value="Brasília"></option>
+                  </datalist>
               </fieldset>
 
               <fieldset id="mensagem">
               <legend>Mensagem do Usuário</legend>
-                <p><label for="cUrg">Grau de Urgência: </label> </p>
-                <p><label for="cMsg">Mensagem: </label> </p>
+                <p>
+                  <label for="cUrg">Grau de Urgência: </label>
+                  Mín <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/> Máx
+                </p>
+                <p>
+                  <label for="cMsg">Mensagem: </label>
+                  <textarea name="tMsg" id="cMsg" rows="5" cols="40" placeholder="Deixa aqui sua mensagem"/></textarea>
+                </p>
               </fieldset>
 
               <fieldset id="pedido">
                 <legend>Quero um Google Glass</legend>
-                  <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label> </p>
-                    <p><label for="cCor">Cor: </label> </p>
-                    <p><label for="cQtd">Quantidade: </label> </p>
-                    <p><label for="cTot">Preço Total: R$ </label> </p>
+                  <p>
+                    <input type="checkbox" name="tPed" id="cPed" checked="true"/>
+                    <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label>
+                  </p>
+                    <p>
+                      <label for="cCor">Cor: </label>
+                      <input type="color" name="tCor" id="cCor" value="#ffffff"/>
+                    </p>
+                    <p>
+                      <label for="cQtd">Quantidade: </label>
+                      <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/>
+                    </p>
+                    <p>
+                      <label for="cTot">Preço Total: R$ </label>
+                      <input type="text" name="tTot" id="cTot" placeholder="Total à pagar" readonly="true">
+                    </p>
               </fieldset>
 
-              [BOTÃO ENVIAR]
+              <input type="submit" name="tEnviar" value="Enviar"/>
 
             </form>
 
