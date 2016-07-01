@@ -5,7 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans); /* fonte do título do site */
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web); /* fonte do subtítulo e corpo */
 
-/* formtação usada em todo o corpo das páginas do site */
+/* formatação usada em todo o corpo das páginas do site */
 body {
   font-family: 'Titillium Web', sans-serif; /* tipo de fonte usado em todo texto que faz parte do conteúdo (corpo) do site */
   font-size: 12pt; /* tamanho da fonte */
@@ -136,7 +136,7 @@ nav#menu ul {
   text-transform: uppercase; /* coloca todos itens da lista não-ordenada em letra maiúscula */
   position: absolute; /* faz com que a lista não-ordenada tenha um posição absoluta, com isso eu posso colocá-la em qualquer lugar que eu queira na página (portanto o menu tem uma posição absoluta)*/
   top: -20px; /* distância entre a lista não-ordenada e a parte superior da página */
-  left: 840px; /* distância entre a lista não-ordenada e a parte esquerda da página */
+  left: 784px; /* distância entre a lista não-ordenada e a parte esquerda da página */
 }
 
 /* formatação dos itens da lista não-ordenada do menu */
@@ -176,7 +176,7 @@ nav#menu a:hover {
 }
 
 /* formatação da seção corpo */
-section#corpo {
+section#corpo-com-divisao {
   display: block; /* exibição da seção corpo em bloco */
   width: 500px; /* largura da seção corpo */
   float: left; /* seção corpo irá flutuar para o lado esquerdo */
@@ -271,7 +271,7 @@ table#tabela caption span {
 /* formatação da seção lateral */
 aside#lateral {
   display: block; /* exibição da seção lateral em bloco */
-  width: 350px; /* largura da seção corpo */
+  width: 350px; /* largura da seção lateral */
   float: right; /* seção lateral irá flutuar para o lado direito */
   background-color: #dddddd; /* cor do fundo */
   padding: 10px; /* espaçamento interno */
@@ -279,10 +279,13 @@ aside#lateral {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, .5); /* cria uma sombra ao redor do aside lateral */
 }
 
-/* formatação das tag P da classe SEM-INDENTACAO do aside*/
+
+/*
+formatação das tag P da tirar a indentação dentro do aside
 aside#lateral p.sem-indentacao {
   text-indent:initial;
 }
+*/
 
 /* formatação dos H1 da seção aside lateral */
 aside#lateral h1 {
