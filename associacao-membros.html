@@ -3,129 +3,101 @@
     <head>
         <meta charset="UTF8"/>
         <title>Informações sobre os membros da associação</title>
-        <!-- o estilo CSS ficará dentro do próprio arquivo HTML -->
-        <style type="text/css">
-            /* formatação do corpo da página*/
-            body {
-                font-family: Arial; /* tipo da fonte */
-                font-size: 10pt; /* tamanho da fonte */
-            }
-            /* formatação dos estilos do parágrafo */
-            p {
-                text-align: justify; /* alinhamento */
-                text-indent: 20px; /* indentação */
-            }
-            article {
-                margin-bottom: 800px;
-            }
-            /* formatação dos H1 dos articles */
-            article h1 {
-                font-size: 15pt;
-                color: #ffffff;
-                background-color: rgba(0, 0, 0, .3);
-                padding: 5px; /* espaçamento interno */
-                margin: 0px; /* espaçamento externo */
-            }
-            /* formatação dos H2 dos articles */
-            article h2 {
-                font-size: 13pt;
-                color: #888888;
-                margin: 0px; /* espaçamento externo */
-            }
-            /* formatação para colocar a imagem à direita do texto */
-            img.coloca-imagem-a-direita {
-                display: block; /* para exibir a imagem como um bloco */
-                float: right; /* flutuar a direita */
-                margin-left: 5px; /* espaçamento externo esquerdo entre a imagem e o texto */
-            }
-        </style>
+
+        <!--   faz a ligação desta página HTML com os estilos CSS   -->
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+
     </head>
 <!-- ####################################################################### -->
     <body>
-      <!-- iframe inicial com explicação como que funciona essa seção ao usuário-->
-      <article id="inicial">
-          <header>
-              <h1>Integrantes da associação</h1>
-              <h2>Atribuições e responsabilidades</h2>
-          </header>
 
-          <p>Para conhecer as atribuições de cada um dos integrantes da Associação dos Moradores de Estreito clique sobre os perfis ao lado.</p>
-          <br/>
-          <br/>
-          <!-- imagem e legenda imagem -->
-          <img src="_images/associacao-membros-seta-esquerda.png" alt="Seta apontando para a esquerda"/>
-      </article>
+      <div id="membros">
 
-      <article id="presidente">
-          <header>
-              <h1>Presidente</h1>
-              <h2>Atribuições e responsabilidades</h2>
-          </header>
-          <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça.</p>
-          <br/>
-          <!-- imagem e legenda imagem -->
-          <img src="_images/associacao-membros-icone-presidente.png" class="coloca-imagem-a-direita" alt="Presidente"/>
-      </article>
+        <article id="inicial"> <!-- iframe inicial com explicação como que funciona essa seção ao usuário-->
+            <header>
+                <h1>Integrantes da associação</h1>
+                <h2>Atribuições e responsabilidades</h2>
+            </header>
 
-      <article id="vice-presidente">
-          <header>
-              <h1>Vice-Presidente</h1>
-              <h2>Atribuições e responsabilidades</h2>
-          </header>
-          <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça.</p>
-          <br/>
-          <!-- imagem e legenda imagem -->
-          <img src="_images/associacao-membros-icone-presidente.png" class="coloca-imagem-a-direita" alt="Vice-presidente"/>
-      </article>
+            <p>Para conhecer as atribuições de cada um dos integrantes da Associação dos Moradores de Estreito clique sobre os perfis ao lado.</p>
+            <br/>
+            <br/>
+            <!-- imagem e legenda imagem -->
+            <img src="_images/associacao-membros-seta-esquerda.png" alt="Seta apontando para a esquerda"/>
+        </article>
 
-      <article id="diretor-social">
-          <header>
-              <h1>Diretor-social</h1>
-              <h2>Atribuições e responsabilidades</h2>
-          </header>
-          <p>Quem pensa que para comandar o Google Glass vai precisar de teclado e mouse, se engana redondamente. O dispositivo vem com vários tipos de sensores e microfones embutidos. Assim, para dar um comando, basta falar ou passar o dedo na lateral do óculos.</p>
-          <!-- imagem e legenda imagem -->
-          <img src="_images/det-touch.jpg" alt="Diretor social"/>
-      </article>
+        <article id="presidente">
+            <header>
+                <h1>Presidente</h1>
+                <h2>Atribuições e responsabilidades</h2>
+            </header>
+            <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça.</p>
+            <br/>
+            <!-- imagem e legenda imagem -->
+            <img src="_images/associacao-membros-icone-presidente.png" class="coloca-imagem-a-direita" alt="Presidente"/>
+        </article>
 
-      <article id="tesoureiro">
-          <header>
-              <h1>Tesoureiro</h1>
-              <h2>Atribuições e responsabilidades</h2>
-          </header>
-          <!-- imagem e legenda imagem -->
-          <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Tesoureiro"/>
-          <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
-      </article>
+        <article id="vice-presidente">
+            <header>
+                <h1>Vice-Presidente</h1>
+                <h2>Atribuições e responsabilidades</h2>
+            </header>
+            <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça.</p>
+            <br/>
+            <!-- imagem e legenda imagem -->
+            <img src="_images/associacao-membros-icone-presidente.png" class="coloca-imagem-a-direita" alt="Vice-presidente"/>
+        </article>
 
-      <article id="secretario">
-          <header>
-              <h1>Secretário</h1>
-              <h2>Atribuições e responsabilidades</h2>
-          </header>
-          <!-- imagem e legenda imagem -->
-          <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Secretário"/>
-          <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
-      </article>
+        <article id="diretor-social">
+            <header>
+                <h1>Diretor-social</h1>
+                <h2>Atribuições e responsabilidades</h2>
+            </header>
+            <p>Quem pensa que para comandar o Google Glass vai precisar de teclado e mouse, se engana redondamente. O dispositivo vem com vários tipos de sensores e microfones embutidos. Assim, para dar um comando, basta falar ou passar o dedo na lateral do óculos.</p>
+            <!-- imagem e legenda imagem -->
+            <img src="_images/det-touch.jpg" alt="Diretor social"/>
+        </article>
 
-      <article id="conselho-fiscal">
-          <header>
-              <h1>Conselho Fiscal</h1>
-              <h2>Atribuições e responsabilidades</h2>
-          </header>
-          <!-- imagem e legenda imagem -->
-          <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Conselho fiscal"/>
-          <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
-      </article>
+        <article id="tesoureiro">
+            <header>
+                <h1>Tesoureiro</h1>
+                <h2>Atribuições e responsabilidades</h2>
+            </header>
+            <!-- imagem e legenda imagem -->
+            <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Tesoureiro"/>
+            <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
+        </article>
 
-      <article id="conselho-administrativo">
-          <header>
-              <h1>Conselho Administrativo</h1>
-              <h2>Atribuições e responsabilidades</h2>
-          </header>
-          <!-- imagem e legenda imagem -->
-          <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Conselho administrativo"/>
-          <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
-      </article>
+        <article id="secretario">
+            <header>
+                <h1>Secretário</h1>
+                <h2>Atribuições e responsabilidades</h2>
+            </header>
+            <!-- imagem e legenda imagem -->
+            <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Secretário"/>
+            <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
+        </article>
+
+        <article id="conselho-fiscal">
+            <header>
+                <h1>Conselho Fiscal</h1>
+                <h2>Atribuições e responsabilidades</h2>
+            </header>
+            <!-- imagem e legenda imagem -->
+            <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Conselho fiscal"/>
+            <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
+        </article>
+
+        <article id="conselho-administrativo">
+            <header>
+                <h1>Conselho Administrativo</h1>
+                <h2>Atribuições e responsabilidades</h2>
+            </header>
+            <!-- imagem e legenda imagem -->
+            <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Conselho administrativo"/>
+            <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
+        </article>
+
+      </div>
     </body>
 </html>

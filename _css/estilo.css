@@ -184,10 +184,24 @@ section#corpo-com-divisao {
   ??? border-right: espessura-linha tipo-linha cor-linha; */
   padding-right: 15px; /* espaçamento interno do lado direito da seção corpo */
 }
+/* ################################ NOTÍCIAS ################################ */
+iframe#frame-noticias {
+  width: 500px;
+  height: 1250px;
+  border: none; /* remove a borda do iframe*/
+  background-color: #ffffff!important; /* ERRO */
 
-/* formatação do H2 do article */
-article#artigo-principal h2 {
-  font-size: 12pt;
+}
+
+/* formtação do iframe frame-noticias por meio do webkit */
+iframe#frame-noticias::-webkit-scrollbar {
+    display: none; /* ocultar barra lateral de navegação */
+}
+/* ########################################################################## */
+
+/* formatação do título das notícias */
+article#artigo-principal h2, div#noticias article h2 {
+  font-size: 14pt;
   color: #606060;
   background-color: #dddddd;
   padding: 5px 0px 5px 10px;
@@ -199,26 +213,27 @@ header#cabecalho-artigo-principal h1 {
   font-family: 'Bubblegum Sans', cursive; /* tipo da fonte */
   font-size: 20pt;
   color: #606060;
-  margin-top: 0px; /* distância superior entre o título da notícia e a secão "Home > Notícias" */
+  margin-top: 0px; /* distância superior entre o título da notícia e a secão "Associação > Página inicial" */
   margin-bottom: 0px;
 }
 
 /* formatação do H2 do cabeçalho da notícia principal */
 header#cabecalho-artigo-principal h2 {
-  font-size: 13pt;
+  font-size: 14pt;
   color: #cecece;
   background-color: #ffffff;
   margin: 0px;
 }
 
 /* formatação do H3 do cabeçalho da notícia principal */
-header#cabecalho-artigo-principal h3 {
-  font-size: 12px;
+header#cabecalho-artigo-principal h3, div#noticias article h3 {
+  font-size: 10pt;
   color: #606060;
 }
 
 .coloca-texto-a-direita {
   text-align: right;
+  margin: 1px; /* diminuir espaçamento externo */
 }
 
 /* formatação da tabela */
@@ -278,6 +293,43 @@ aside#lateral {
   margin-top: 10px; /*pra colocar o aside lateral mais para baixo (para aparecer borda branca superior) */
   box-shadow: 2px 2px 2px rgba(0, 0, 0, .5); /* cria uma sombra ao redor do aside lateral */
 }
+
+/* ##################### PÁGINA ASSOCIACAO-MEMBROS.HTML ##################### */
+
+/* formatação dos article */
+div#membros article, div#noticias article {
+    margin-bottom: 800px;
+}
+
+/* formatação dos estilos do parágrafo */
+div#membros p {
+    text-align: justify; /* alinhamento */
+    text-indent: 20px; /* indentação */
+}
+
+/* formatação dos H1 dos articles */
+div#membros article h1 {
+    font-size: 14pt;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 5px; /* espaçamento interno */
+    margin: 0px; /* espaçamento externo */
+}
+
+/* formatação dos H2 dos articles */
+div#membros article h2 {
+    font-size: 13pt;
+    color: #888888;
+    margin: 0px; /* espaçamento externo */
+}
+
+/* formatação para colocar a imagem à direita do texto */
+div#membros img.coloca-imagem-a-direita {
+    display: block; /* para exibir a imagem como um bloco */
+    float: right; /* flutuar a direita */
+    margin-left: 5px; /* espaçamento externo esquerdo entre a imagem e o texto */
+}
+/* ########################################################################## */
 
 
 /*
