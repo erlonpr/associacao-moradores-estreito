@@ -184,19 +184,15 @@ section#corpo-com-divisao {
   ??? border-right: espessura-linha tipo-linha cor-linha; */
   padding-right: 15px; /* espaçamento interno do lado direito da seção corpo */
 }
+
 /* ################################ NOTÍCIAS ################################ */
-iframe#frame-noticias {
+iframe#frame-noticias, iframe#frame-documentos {
   width: 500px;
   height: 1250px;
   border: none; /* remove a borda do iframe*/
   background-color: #ffffff!important; /* ERRO */
-
 }
 
-/* formtação do iframe frame-noticias por meio do webkit */
-iframe#frame-noticias::-webkit-scrollbar {
-    display: none; /* ocultar barra lateral de navegação */
-}
 /* ########################################################################## */
 
 /* formatação do título das notícias */
@@ -226,7 +222,7 @@ header#cabecalho-artigo-principal h2 {
 }
 
 /* formatação do H3 do cabeçalho da notícia principal */
-header#cabecalho-artigo-principal h3, div#noticias article h3 {
+header#cabecalho-artigo-principal h3, div#noticias article h3, div#documentos article h3 {
   font-size: 10pt;
   color: #606060;
 }
@@ -296,8 +292,8 @@ aside#lateral {
 
 /* ##################### PÁGINA ASSOCIACAO-MEMBROS.HTML ##################### */
 
-/* formatação dos article */
-div#membros article, div#noticias article {
+/* espaço que separa cada notícia, ata e descrição das atribuições dos membros da associação */
+div#membros article, div#noticias article, div#documentos article {
     margin-bottom: 800px;
 }
 

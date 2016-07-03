@@ -2,38 +2,52 @@
 <html>
     <head>
         <meta charset="UTF8"/>
-        <title>Notícias</title>
+        <title>Atas</title>
 
         <!--   faz a ligação desta página HTML com os estilos CSS   -->
-        <link rel="stylesheet" type="text/css" href="_css/estilo.css" />   
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
 
     </head>
     <body>
-      <div id="noticias">
-        <article id="noticia5">
+      <div id="documentos">
+        <article id="ata-005-2016">
           <header>
-            <h2>Associação realiza evento de arrecadação de cobertores</h2>
+            <h2>Ata 005/2016</h2>
           </header>
 
           <p>Lorem ipsum dolor sit amet, debitis scaevola eos ei, eu vis sale mollis. Cum ut aeterno quaestio percipitur, in novum doctus legimus eam. At quodsi veritus blandit mea, cum numquam mandamus assentior te. Sea hendrerit reprehendunt cu, te mei alterum constituto. Id mei vero dicit nihil, et noluisse copiosae recteque has, in denique perpetua democritum sed.</p>
           <p>Pro dolorum qualisque cu. At ius etiam integre. In reque eruditi consequat vis, sed brute ceteros tincidunt ei. Eu ocurreret contentiones quo. Iisque admodum disputando cum et. An quo dicant corpora intellegam. Ad qui dignissim intellegam, eu per indoctum qualisque, est at singulis philosophia. Quo mutat vitae an, cum ne tritani definiebas referrentur. His habeo prima vulputate cu, probo numquam facilisi ad nec. Elaboraret repudiandae quo at, in vivendo torquatos deterruisset sed.</p>
-
-          <!-- comando para exibir imagem de modo lógico e semântico -->
-          <figure class="foto-legenda">
-            <img src="_images/noticia5-usina-estreito.jpg" />
-            <figcaption>
-              <h3>Usina de Estreito</h3>
-              <p>Imagem das comportas da usina</p>
-            </figcaption>
-          </figure>
-
           <p>Velit ponderum in quo, persius graecis vel at. Quando dolores dissentiunt an nec. Habemus ponderum sea ex, sit munere percipit cu. Alienum praesent interpretaris ex est, probo mnesarchum no ius. Alii oporteat vel no. Vis ea ipsum nonumes.</p>
           <h3 class="coloca-texto-a-direita">Postado em 14/06/2016</h3>
+
+          <!-- div que irá conter o áudio e o vídeo -->
+          <div id="tv-radio">
+            <!-- tag AUDIO é usada para reproduzir uma música   -->
+            <audio id="musica" controls="controls">
+              <!-- para músicas no formato mp3 -->
+              <source src="http://www.rodrigofarah.com.br/arquivos/rod/RodrigoFarah-FixYou.mp3" type="audio/mpeg"/>
+              <!-- para músicas no formato m4a -->
+              <source src="https://www.dropbox.com/s/1y7sx3ja466z8pr/GuitarCenterWolfgangOrange.m4a" type="audio/x-aac"/>
+              <!-- para músicas no formato ogg -->
+              <source src="https://upload.wikimedia.org/wikipedia/pt/a/a8/Rihanna_-_We_Found_Love_%28%C3%A1udio%29.ogg" type="audio/ogg"/>
+              Desculpe, não foi possível carregar o áudio. <!-- esta mensagem será mostrada caso o navegador não consiga carregar nenhum das opções de áudio informada -->
+            </audio>
+            <!-- tag VIDEO é usada para reproduzir uma vídeo   -->
+            <video id="filme" controls="controls" poster="_images/video-mini03.jpg">
+              <!-- para vídeos no formato mp4 -->
+              <source src="http://download.wavetlan.com/SVV/Media/HTTP/H264/Talkinghead_Media/H264_test1_Talkinghead_mp4_480x360.mp4" type="video/mp4"/>
+              <!-- para vídeos no formato webm -->
+              <source src="http://video.webmfiles.org/big-buck-bunny_trailer.webm" type="video/webm,"/>
+              <!-- para vídeos no formato ogv -->
+              <source src="http://ripe.ufba.br/articles/0000/3246/web/tiny.ogv" type="video/ogg"/>
+              Desculpe, não foi possível carregar o vídeo. <!-- esta mensagem será mostrada caso o navegador não consiga carregar nenhum das opções de vídeo informada -->
+            </video>
+          </div>
         </article>
 
-        <article id="noticia4">
+        <article id="ata-004-2016">
           <header>
-            <h2>Parceria entre cidadãos e associação ajuda na reforma da sua sede</h2>
+            <h2>Ata 004/2016</h2>
           </header>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
           <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. </p>
@@ -42,18 +56,18 @@
           <h3 class="coloca-texto-a-direita">Postado em 14/06/2016</h3>
         </article>
 
-        <article id="noticia3">
+        <article id="ata-003-2016">
           <header>
-            <h2>Campanha de vacinação</h2>
+            <h2>Ata 003/2016</h2>
           </header>
           <p>Lorem ipsum dolor sit amet, graecis eleifend oportere nec an, eam ex aeterno nusquam. Nec te debet aeque mediocritatem, eam cu detracto ponderum. Nec quod vero posse in, enim invenire per no, illum causae reformidans ea sit. Doming scripta reprimique his ea, no eam populo insolens.</p>
           <p>Pro eu ipsum omnium, meis signiferumque cu sea. Te ubique graecis tacimates vis, nec mucius aliquip ne. Numquam apeirian efficiantur sed cu, ea aeterno debitis mel. Id per ludus efficiantur, wisi maiestatis has ex, ea sea mundi alienum accusamus. Mei audire noluisse ex, et est dicam soluta menandri. Has idque apeirian contentiones ne, semper propriae gloriatur no mel, has an impetus comprehensam.</p>
           <h3 class="coloca-texto-a-direita">Postado em 14/06/2016</h3>
         </article>
 
-        <article id="noticia2">
+        <article id="ata-002-2016">
           <header>
-            <h2>Prestação de contas anual é aprovada pelos cidadãos de Estreito e orgãos competentes</h2>
+            <h2>Ata 002/2016</h2>
           </header>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
           <p>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
@@ -64,9 +78,9 @@
           <h3 class="coloca-texto-a-direita">Postado em 14/06/2016</h3>
         </article>
 
-        <article id="noticia1">
+        <article id="ata-001-2016">
           <header>
-            <h2>Parceria entre a associação e a Prefeitura rendem benefícios aos cidadãos</h2>
+            <h2>Ata 001/2016</h2>
           </header>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
           <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. </p>
@@ -76,6 +90,29 @@
           <p>Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut felis in purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus consectetuer risus et tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. </p>
           <h3 class="coloca-texto-a-direita">Postado em 14/06/2016</h3>
         </article>
+
+        <!-- ########################## BALANCETES ######################### -->
+
+        <article id="balancete-02-2016">
+          <header>
+            <h2>Balancete Fevereiro/2016</h2>
+          </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+          <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. </p>
+          <p>Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. </p>
+          <p>Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. </p>
+          <h3 class="coloca-texto-a-direita">Postado em 14/06/2016</h3>
+        </article>
+
+        <article id="balancete-01-2016">
+          <header>
+            <h2>Balancete Janeiro/2016</h2>
+          </header>
+          <p>Lorem ipsum dolor sit amet, graecis eleifend oportere nec an, eam ex aeterno nusquam. Nec te debet aeque mediocritatem, eam cu detracto ponderum. Nec quod vero posse in, enim invenire per no, illum causae reformidans ea sit. Doming scripta reprimique his ea, no eam populo insolens.</p>
+          <p>Pro eu ipsum omnium, meis signiferumque cu sea. Te ubique graecis tacimates vis, nec mucius aliquip ne. Numquam apeirian efficiantur sed cu, ea aeterno debitis mel. Id per ludus efficiantur, wisi maiestatis has ex, ea sea mundi alienum accusamus. Mei audire noluisse ex, et est dicam soluta menandri. Has idque apeirian contentiones ne, semper propriae gloriatur no mel, has an impetus comprehensam.</p>
+          <h3 class="coloca-texto-a-direita">Postado em 14/06/2016</h3>
+        </article>
+
       </div>
     </body>
 </html>

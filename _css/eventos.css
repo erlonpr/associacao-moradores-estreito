@@ -47,78 +47,49 @@ ul#album-fotos li:hover span{
 
 ul#album-fotos li#foto01 {
     background: url('../_images/galeria-01.jpg');
-    background-position: 50% 50%; /* coloca o zoom da imagem focado na sua parte central */
-    background-size: 400px 400px; /* especifica o tamanho ORIGINAL da imagem de fundo */
-    background-color: #ffffff; /* define a cor de fundo para branco */
-}
-
-/* formatação da foto01 quando passar o mouse sobre ela */
-ul#album-fotos li#foto01:hover {
-    background-position: 0px 0px; /* coloca o zoom da imagem baseado no lado superior esquerdo dela (zoom default) */
-    background-size: 200px 200px; /* reduz o tamanho da imagem pela metade para caber perfeitamente no espaço definido para cada item da lista */
 }
 
 ul#album-fotos li#foto02 {
     background: url('../_images/galeria-02.jpg');
-    background-position: 50% 50%; /* coloca o zoom da imagem focado na sua parte central */
-    background-size: 400px 400px; /* especifica o tamanho ORIGINAL da imagem de fundo */
-    background-color: #ffffff; /* define a cor de fundo para branco */
-}
-
-/* formatação da foto02 quando passar o mouse sobre ela */
-ul#album-fotos li#foto02:hover {
-    background-position: 0px 0px; /* coloca o zoom da imagem baseado no lado superior esquerdo dela (zoom default) */
-    background-size: 200px 200px; /* reduz o tamanho da imagem pela metade para caber perfeitamente no espaço definido para cada item da lista */
 }
 
 ul#album-fotos li#foto03 {
     background: url('../_images/galeria-03.jpg');
-    background-position: 50% 50%; /* coloca o zoom da imagem focado na sua parte central */
-    background-size: 400px 400px; /* especifica o tamanho ORIGINAL da imagem de fundo */
-    background-color: #ffffff; /* define a cor de fundo para branco */
-}
-
-/* formatação da foto03 quando passar o mouse sobre ela */
-ul#album-fotos li#foto03:hover {
-    background-position: 0px 0px; /* coloca o zoom da imagem baseado no lado superior esquerdo dela (zoom default) */
-    background-size: 200px 200px; /* reduz o tamanho da imagem pela metade para caber perfeitamente no espaço definido para cada item da lista */
 }
 
 ul#album-fotos li#foto04 {
     background: url('../_images/galeria-04.jpg');
-    background-position: 50% 50%; /* coloca o zoom da imagem focado na sua parte central */
-    background-size: 400px 400px; /* especifica o tamanho ORIGINAL da imagem de fundo */
-    background-color: #ffffff; /* define a cor de fundo para branco */
-}
-
-/* formatação da foto04 quando passar o mouse sobre ela */
-ul#album-fotos li#foto04:hover {
-    background-position: 0px 0px; /* coloca o zoom da imagem baseado no lado superior esquerdo dela (zoom default) */
-    background-size: 200px 200px; /* reduz o tamanho da imagem pela metade para caber perfeitamente no espaço definido para cada item da lista */
 }
 
 ul#album-fotos li#foto05 {
     background: url('../_images/galeria-05.jpg');
-    background-position: 50% 50%; /* coloca o zoom da imagem focado na sua parte central */
-    background-size: 400px 400px; /* especifica o tamanho ORIGINAL da imagem de fundo */
-    background-color: #ffffff; /* define a cor de fundo para branco */
-}
-
-/* formatação da foto05 quando passar o mouse sobre ela */
-ul#album-fotos li#foto05:hover {
-    background-position: 0px 0px; /* coloca o zoom da imagem baseado no lado superior esquerdo dela (zoom default) */
-    background-size: 200px 200px; /* reduz o tamanho da imagem pela metade para caber perfeitamente no espaço definido para cada item da lista */
 }
 
 ul#album-fotos li#foto06 {
     background: url('../_images/galeria-06.jpg');
+}
+
+ul#album-fotos li#foto07 {
+    background: url('../_images/galeria-07.jpg');
+}
+
+ul#album-fotos li#foto08 {
+    background: url('../_images/galeria-08.jpg');
+}
+
+ul#album-fotos li#foto09 {
+    background: url('../_images/galeria-09.jpg');
+}
+
+/* formatação para cada foto */
+ul#album-fotos li#foto01, ul#album-fotos li#foto02, ul#album-fotos li#foto03, ul#album-fotos li#foto04, ul#album-fotos li#foto05, ul#album-fotos li#foto06, ul#album-fotos li#foto07, ul#album-fotos li#foto08, ul#album-fotos li#foto09 {
     background-position: 50% 50%; /* coloca o zoom da imagem focado na sua parte central */
     background-size: 400px 400px; /* especifica o tamanho ORIGINAL da imagem de fundo */
     background-color: #ffffff; /* define a cor de fundo para branco */
 }
 
-/* formatação da foto06 quando passar o mouse sobre ela */
-ul#album-fotos li#foto06:hover {
+/* formatação das fotos quando passar o mouse sobre elas */
+ul#album-fotos li#foto01:hover, ul#album-fotos li#foto02:hover, ul#album-fotos li#foto03:hover, ul#album-fotos li#foto04:hover, ul#album-fotos li#foto05:hover, ul#album-fotos li#foto06:hover, ul#album-fotos li#foto07:hover, ul#album-fotos li#foto08:hover, ul#album-fotos li#foto09:hover {
     background-position: 0px 0px; /* coloca o zoom da imagem baseado no lado superior esquerdo dela (zoom default) */
     background-size: 200px 200px; /* reduz o tamanho da imagem pela metade para caber perfeitamente no espaço definido para cada item da lista */
 }
