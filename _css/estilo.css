@@ -196,7 +196,7 @@ iframe#frame-noticias, iframe#frame-documentos {
 /* ########################################################################## */
 
 /* formatação do título das notícias */
-article#artigo-principal h2, div#noticias article h2 {
+article#artigo-principal h2, div#noticias article h2, div#documentos article h2 {
   font-size: 14pt;
   color: #606060;
   background-color: #dddddd;
@@ -294,7 +294,7 @@ aside#lateral {
 
 /* espaço que separa cada notícia, ata e descrição das atribuições dos membros da associação */
 div#membros article, div#noticias article, div#documentos article {
-    margin-bottom: 800px;
+    margin-bottom: 1000px;
 }
 
 /* formatação dos estilos do parágrafo */
