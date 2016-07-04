@@ -225,11 +225,12 @@ header#cabecalho-artigo-principal h2 {
 header#cabecalho-artigo-principal h3, div#noticias article h3, div#documentos article h3 {
   font-size: 10pt;
   color: #606060;
+  padding: 0px;
+  margin: 0px;
 }
 
 .coloca-texto-a-direita {
   text-align: right;
-  margin: 1px; /* diminuir espaçamento externo */
 }
 
 /* formatação da tabela */
@@ -295,12 +296,6 @@ aside#lateral {
 /* espaço que separa cada notícia, ata e descrição das atribuições dos membros da associação */
 div#membros article, div#noticias article, div#documentos article {
     margin-bottom: 1000px;
-}
-
-/* formatação dos estilos do parágrafo */
-div#membros p {
-    text-align: justify; /* alinhamento */
-    text-indent: 20px; /* indentação */
 }
 
 /* formatação dos H1 dos articles */

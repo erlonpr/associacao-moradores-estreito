@@ -8,11 +8,14 @@
         <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
 
         <style>
-          body { background-color: transparent; } /* faz com o que frame fique branco, ao não herda as configurações CSS do body da página */          
+          body { background-color: transparent; } /* faz com o que frame fique branco, ao não herda as configurações CSS do body da página */
         </style>
 
     </head>
-<!-- ####################################################################### -->
+
+    <!--   faz a ligação desta página HTML com as funções JavaScript -->
+    <script type="text/javascript" language="javascript" src="_javascript/funcoes.js"></script>
+
     <body>
 
       <div id="membros">
@@ -23,11 +26,10 @@
                 <h2>Atribuições e responsabilidades</h2>
             </header>
 
-            <p>Para conhecer as atribuições de cada um dos integrantes da Associação dos Moradores de Estreito clique sobre os perfis ao lado.</p>
+            <p>Para conhecer as atribuições e responsabilidades de cada um dos integrantes da Associação dos Moradores de Estreito clique sobre os perfis ao lado.</p>
             <br/>
-            <br/>
-            <!-- imagem e legenda imagem -->
-            <img src="_images/associacao-membros-seta-esquerda.png" alt="Seta apontando para a esquerda"/>
+            <!-- imagem de seta para esquerda e sua legenda -->
+            <img id="icone" src="_images/associacao-membros-seta-esquerda.png" alt="Seta apontando para a esquerda" onmouseover="mudaIcone('_images/associacao-membros-seta-esquerda-hover.png')" onmouseout="mudaIcone('_images/associacao-membros-seta-esquerda.png')"/>
         </article>
 
         <article id="presidente">
@@ -35,10 +37,8 @@
                 <h1>Presidente</h1>
                 <h2>Atribuições e responsabilidades</h2>
             </header>
-            <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça.</p>
-            <br/>
-            <!-- imagem e legenda imagem -->
-            <img src="_images/associacao-membros-icone-presidente.png" class="coloca-imagem-a-direita" alt="Presidente"/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. </p>
         </article>
 
         <article id="vice-presidente">
@@ -46,10 +46,7 @@
                 <h1>Vice-Presidente</h1>
                 <h2>Atribuições e responsabilidades</h2>
             </header>
-            <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça.</p>
-            <br/>
-            <!-- imagem e legenda imagem -->
-            <img src="_images/associacao-membros-icone-presidente.png" class="coloca-imagem-a-direita" alt="Vice-presidente"/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
         </article>
 
         <article id="diretor-social">
@@ -57,9 +54,7 @@
                 <h1>Diretor-social</h1>
                 <h2>Atribuições e responsabilidades</h2>
             </header>
-            <p>Quem pensa que para comandar o Google Glass vai precisar de teclado e mouse, se engana redondamente. O dispositivo vem com vários tipos de sensores e microfones embutidos. Assim, para dar um comando, basta falar ou passar o dedo na lateral do óculos.</p>
-            <!-- imagem e legenda imagem -->
-            <img src="_images/det-touch.jpg" alt="Diretor social"/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
         </article>
 
         <article id="tesoureiro">
@@ -67,9 +62,8 @@
                 <h1>Tesoureiro</h1>
                 <h2>Atribuições e responsabilidades</h2>
             </header>
-            <!-- imagem e legenda imagem -->
-            <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Tesoureiro"/>
-            <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+            <p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
         </article>
 
         <article id="secretario">
@@ -77,19 +71,16 @@
                 <h1>Secretário</h1>
                 <h2>Atribuições e responsabilidades</h2>
             </header>
-            <!-- imagem e legenda imagem -->
-            <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Secretário"/>
-            <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
-        </article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+          </article>
 
         <article id="conselho-fiscal">
             <header>
                 <h1>Conselho Fiscal</h1>
                 <h2>Atribuições e responsabilidades</h2>
             </header>
-            <!-- imagem e legenda imagem -->
-            <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Conselho fiscal"/>
-            <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+            <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
         </article>
 
         <article id="conselho-administrativo">
@@ -97,11 +88,8 @@
                 <h1>Conselho Administrativo</h1>
                 <h2>Atribuições e responsabilidades</h2>
             </header>
-            <!-- imagem e legenda imagem -->
-            <img src="_images/det-bateria.jpg" class="coloca-imagem-a-direita" alt="Conselho administrativo"/>
-            <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
         </article>
-
       </div>
     </body>
 </html>
