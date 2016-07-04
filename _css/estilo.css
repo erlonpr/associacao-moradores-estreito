@@ -190,7 +190,7 @@ iframe#frame-noticias, iframe#frame-documentos {
   width: 500px;
   height: 1250px;
   border: none; /* remove a borda do iframe*/
-  background-color: #ffffff!important; /* ERRO */
+  background-color: #ffffff !important;
 }
 
 /* ########################################################################## */
