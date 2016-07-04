@@ -11,6 +11,7 @@ body {
   font-size: 12pt; /* tamanho da fonte */
   background-color: #dddddd;  /* cor de fundo do corpo do site */
   color: rgba(0, 0, 0, 1); /* cor do texto da página */
+  margin: 0;
 }
 
 /* fortamação da div interface (OBS: parte onde fica o conteúdo do site)*/
@@ -363,4 +364,8 @@ footer#rodape {
 footer#rodape p {
   text-indent: inherit; /* não herda a formatação de indentação já formatada anteriormente */
   text-align: center; /* alinha texto do rodapé ao centro do página */
+}
+
+#noticias{
+  background-color: #fff;
 }
