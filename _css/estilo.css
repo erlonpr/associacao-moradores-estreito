@@ -11,6 +11,7 @@ body {
   font-size: 12pt; /* tamanho da fonte */
   background-color: #dddddd;  /* cor de fundo do corpo do site */
   color: rgba(0, 0, 0, 1); /* cor do texto da página */
+  margin: 0; /* remover borda externa ao redor dos iframe */
 }
 
 /* fortamação da div interface (OBS: parte onde fica o conteúdo do site)*/
@@ -190,7 +191,11 @@ iframe#frame-noticias, iframe#frame-documentos {
   width: 500px;
   height: 1250px;
   border: none; /* remove a borda do iframe*/
-  background-color: #ffffff!important; /* ERRO */
+}
+
+/* define a cor de fundo dos iframes */
+div#noticias, div#documentos, div#membros {
+  background-color: #ffffff;
 }
 
 /* ########################################################################## */
@@ -204,6 +209,8 @@ article#artigo-principal h2, div#noticias article h2, div#documentos article h2 
   margin: 10px 0px 10px 0px;
 }
 
+/* ################################ CABEÇALHO ############################### */
+
 /* formatação do H1 do cabeçalho da notícia principal */
 header#cabecalho-artigo-principal h1 {
   font-family: 'Bubblegum Sans', cursive; /* tipo da fonte */
@@ -213,7 +220,7 @@ header#cabecalho-artigo-principal h1 {
   margin-bottom: 0px;
 }
 
-/* formatação do H2 do cabeçalho da notícia principal */
+/* formatação do H2 do cabeçalho da notícia principal (autor da postagem)*/
 header#cabecalho-artigo-principal h2 {
   font-size: 14pt;
   color: #cecece;
@@ -232,6 +239,7 @@ header#cabecalho-artigo-principal h3, div#noticias article h3, div#documentos ar
 .coloca-texto-a-direita {
   text-align: right;
 }
+/* ########################################################################## */
 
 /* formatação da tabela */
 table#tabela {
