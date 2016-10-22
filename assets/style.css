@@ -1,0 +1,38 @@
+@charset "UTF8";
+
+body {
+    background-color: #ffffff;
+    font-family: monospace;
+}
+
+header.page_header {
+    text-align: center;
+    cursor: pointer;
+}
+
+/* corpo da página */
+section.inside {
+    display: block;
+    width: 75%;
+    margin: auto;
+    padding: 1px 45px 40px 45px;
+    text-align: justify;
+    background-color: #e7e7e7;
+    font-size: 48px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5); /* coloca uma sombra em volta da sessão de conteúdo da página (inside)
+  ??? box-shadow: deslocamento-horizontal deslocamento-vertical espalhamento cor */
+}
+
+
+a {
+    color: #3998d6;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+}

@@ -1,0 +1,369 @@
+/* comando para reconhecer a grafia latina */
+@charset "UTF8";
+
+/*como para importar modelo de fontes do Google Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans); /* fonte do título do site */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web); /* fonte do subtítulo e corpo */
+
+/* formatação usada em todo o corpo das páginas do site */
+body {
+  font-family: 'Titillium Web', sans-serif; /* tipo de fonte usado em todo texto que faz parte do conteúdo (corpo) do site */
+  font-size: 12pt; /* tamanho da fonte */
+  background-color: #dddddd;  /* cor de fundo do corpo do site */
+  color: rgba(0, 0, 0, 1); /* cor do texto da página */
+  margin: 0; /* remover borda externa ao redor dos iframe */
+}
+
+/* fortamação da div interface (OBS: parte onde fica o conteúdo do site)*/
+div#interface {
+  width: 900px; /* largura da interface */
+  background-color: #ffffff; /* cor de fundo da interface */
+  margin: -20px auto 0px auto; /* distância da interface em relação à margem EXTERNA superior, direita, inferior e esquerda respectivamente */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .5); /* coloca uma sombra em volta da interface
+  ??? box-shadow: deslocamento-horizontal deslocamento-vertical espalhamento cor */
+  padding: 10px 10px 10px 10px; /* distância da interface em relação à parte INTERNA superior, direita, inferior e esquerda respectivamente do texto */
+}
+
+/* modifica a formatação de cada parágrafo da página */
+p {
+  text-align: justify;
+  text-indent: 30px;
+}
+
+/* formatação dos links */
+a {
+  color: #45b09a; /* cor dos links (cor padrão #606060)*/
+  text-decoration: none; /* retira o sublinhado dos links */
+  font-weight: bold;
+}
+
+/* formatação dos links ao passar o mouse sobre eles */
+a:hover {
+  text-decoration: underline; /* sublina o link */
+}
+
+/* formatação dos links do MENU */
+a.link-menu {
+  font-weight: normal;
+}
+
+/* ############################ CABEÇALHO DO SITE ############################ */
+header#cabecalho {
+  border-bottom: 1px #606060 solid; /* insere uma linha na borda inferior
+  ??? border-bottom: largura-da-linha cor-da-linha formato-da-linha */
+  height: 150px; /* altura do cabeçalho */
+  /*
+  #RETIRADO
+  background: url("../_images/glass-logo-peq.jpg") no-repeat 0px 125px; coloca uma imagem como plano de fundo do cabeçalho
+
+  ??? background: endereco-da-imagem sem-repetição distância-borda-esquerda distância-borda-superior
+  */
+}
+
+/* ############################# TÍTULO DO SITE ############################# */
+header#cabecalho h1 {
+    font-family: 'Bubblegum Sans', cursive; /* tipo da fonte */
+    font-size: 26pt;
+    /* color: #606060; cor cinza padrão */
+    color: #45b09a;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase; /* coloca em letra maiúscula */
+    padding: 0px;
+    margin-top: 70px; /* distância do título da página da borda superior */
+    margin-bottom: 0px;
+}
+
+/* ########################### SUBTÍTULO DO SITE ############################ */
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif; /* tipo da fonte */
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: -5px; /* para aproximar o subtítulo ao título da página */
+}
+
+/* ############################ LOGOTIPO DO SITE ############################ */
+
+/* formtação do ícone do site */
+header#cabecalho img#icone {
+  position: absolute; /* ícone está em posição absoluta */
+  top: 80px;
+  left: 1220px;
+}
+
+/* formatação de imagens com legendas */
+figure.foto-legenda{
+  position: relative; /* tem uma posição relativa ao local onde foi posicionado no código HTML */
+  border: 8px solid white;
+  box-shadow: 1px 1px 4px black; /* dá um efeito de sombra à borda da foto */
+}
+
+/* realiza o ajuste automático do tamanho das imagens que estão dentro da tag figure */
+figure.foto-legenda img {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+realiza os ajustes de posicionamente e exibição do figcaption
+o figcaption é um objeto filho do container figure
+*/
+figure.foto-legenda figcaption {
+  opacity: 0; /* faz o figcaption ficar transparente */
+  position: absolute; /* define uma posição absoluta em relação ao container pai */
+  top: 0px; /* distância do fundo do figcaption em relação a borda superior */
+  background-color: rgba(0, 0, 0, .4); /* cor do fundo do figcaption */
+  color: white; /* cor do texto */
+  width: 100%; /* redimensiona a largura automaticamente para toda a área possível de ser ocupada pelo figcaption */
+  height: 100%; /* redimensiona a altura automaticamente para toda a área possível de ser ocupada pelo figcaption */
+  padding: 10px; /* distância INTERNA do texto do figcaption em relação a borda */
+  box-sizing: border-box; /* é usado para dizer ao navegador que as propriedades de dimensionamento (largura e altura) do figcaption deve ser em formato de caixa */
+  transition: opacity 1s; /* tempo de transição da opacidade */
+}
+
+/* realiza o evento ao passar o mouse sobre o figcaption */
+figure.foto-legenda:hover figcaption {
+  opacity: 1; /* opacidade do figcaption de 100% */
+}
+
+/* fortamação do menu */
+nav#menu{
+  display: block; /* faz com que o menu seja exibido como um bloco (um bloco pode flutuar pela tela) */
+}
+
+/* formatação da lista não-ordenada do menu */
+nav#menu ul {
+  list-style: none; /* retira os pontos dos itens da lista não-ordenada (ul) */
+  text-transform: uppercase; /* coloca todos itens da lista não-ordenada em letra maiúscula */
+  position: absolute; /* faz com que a lista não-ordenada tenha um posição absoluta, com isso eu posso colocá-la em qualquer lugar que eu queira na página (portanto o menu tem uma posição absoluta)*/
+  top: -20px; /* distância entre a lista não-ordenada e a parte superior da página */
+  left: 784px; /* distância entre a lista não-ordenada e a parte esquerda da página */
+}
+
+/* formatação dos itens da lista não-ordenada do menu */
+nav#menu li {
+  display: inline-block; /* faz que com que todos os itens da lista sejam organizados em um bloco disposto em linha */
+  background-color: #dddddd; /* cor de fundo dos itens da lista */
+  padding: 10px; /* coloca um espaço interno entre o texto e a borda do item */
+  margin: 2px; /* coloca um espaço externo entre um item e outro da lista */
+  /* realiza um efeito de transição da cor do fundo de cada item da lista que dura 1 segundo */
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+/* realiza efeito ao passar o mouse por cima de cada item da lista */
+nav#menu li:hover {
+  background-color: #606060; /* muda a cor de fundo do item da lista */
+}
+
+/* formatação do itens que foram classificados como H1 no menu */
+nav#menu h1 {
+  display: none; /* oculta o texto classificado como H1 no menu */
+}
+
+/* formatação dos links do menu principal */
+nav#menu a {
+  color: #000000; /* cor do texto dos links do menu principal */
+  text-decoration: none; /* retira o sublinhado dos links */
+}
+
+/* formatação dos links do menu principal quando usuário passa o mouse por cima dele */
+nav#menu a:hover {
+  color: #ffffff; /* deixa a cor dos links do menu principal branco */
+  text-decoration: underline; /*sublinha o texto dos links do menu principal */
+}
+
+/* formatação da seção corpo */
+section#corpo-com-divisao {
+  display: block; /* exibição da seção corpo em bloco */
+  width: 500px; /* largura da seção corpo */
+  float: left; /* seção corpo irá flutuar para o lado esquerdo */
+  border-right: 1px solid #606060; /* adiciona uma linha na borda direita da seção corpo
+  ??? border-right: espessura-linha tipo-linha cor-linha; */
+  padding-right: 15px; /* espaçamento interno do lado direito da seção corpo */
+}
+
+/* ################################ NOTÍCIAS ################################ */
+iframe#frame-noticias, iframe#frame-documentos {
+  width: 500px;
+  height: 1250px;
+  border: none; /* remove a borda do iframe*/
+}
+
+/* define a cor de fundo dos iframes */
+div#noticias, div#documentos, div#membros {
+  background-color: #ffffff;
+}
+
+/* ########################################################################## */
+
+/* formatação do título das notícias */
+article#artigo-principal h2, div#noticias article h2, div#documentos article h2 {
+  font-size: 14pt;
+  color: #606060;
+  background-color: #dddddd;
+  padding: 5px 0px 5px 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+/* ################################ CABEÇALHO ############################### */
+
+/* formatação do H1 do cabeçalho da notícia principal */
+header#cabecalho-artigo-principal h1 {
+  font-family: 'Bubblegum Sans', cursive; /* tipo da fonte */
+  font-size: 20pt;
+  color: #606060;
+  margin-top: 0px; /* distância superior entre o título da notícia e a secão "Associação > Página inicial" */
+  margin-bottom: 0px;
+}
+
+/* formatação do H2 do cabeçalho da notícia principal (autor da postagem)*/
+header#cabecalho-artigo-principal h2 {
+  font-size: 14pt;
+  color: #cecece;
+  background-color: #ffffff;
+  margin: 0px;
+}
+
+/* formatação do H3 do cabeçalho da notícia principal */
+header#cabecalho-artigo-principal h3, div#noticias article h3, div#documentos article h3 {
+  font-size: 10pt;
+  color: #606060;
+  padding: 0px;
+  margin: 0px;
+}
+
+.coloca-texto-a-direita {
+  text-align: right;
+}
+/* ########################################################################## */
+
+/* formatação da tabela */
+table#tabela {
+  border: 1px solid #606060; /* define uma borda ao redor da tabela */
+  border-spacing: 0px; /* remove espaço entre as células da tabela, pois está com 0 pixels */
+  margin-left: auto; /* para centralizar a tabela à esquerda*/
+  margin-right: auto; /* para centralizar a tabela à direita*/
+}
+
+/* formatação da célula da tabela */
+table#tabela td {
+  border: 1px solid #606060; /* define uma borda ao redor da célula */
+  padding: 10px; /* para aumentar o espaço interno da célula da tabela */
+  text-align: center; /* alinhamento horizontal da célula */
+  vertical-align: middle; /* alinhamento vertical da célula */
+}
+
+/* formtação das células da esquerda */
+table#tabela td.cel-esq {
+  color: #ffffff; /* cor do texto das células à esquerda */
+  background-color: #606060; /* cor de fundo das células à esquerda */
+  vertical-align: top; /* alinhamento vertical das células à esquerda */
+  font-weight: bold; /* coloca texto das células à esquerda em negrito */
+}
+
+/* formtação das células da direita */
+table#tabela td.cel-dir {
+  background-color: #cecece; /* cor de fundo das células à direita */
+}
+
+/* formatação do caption da tabela */
+table#tabela caption {
+  color: #888888; /* cor do texto que está dentro da tag CAPTION */
+  font-size: 13pt; /* tamanho do texto que está dentro da tag CAPTION */
+  font-weight: bolder; /* coloca texto que está dentro da tag CAPTION em negrito */
+}
+
+/* formtação da tag SPAN do caption */
+table#tabela caption span {
+  display: block; /* vai ser exibido como um bloco flutuante */
+  float: right; /* bloco irá flutuar à esquerda */
+  color: #000000; /* cor do texto que está dentro da tag SPAN */
+  font-size: 8pt; /* tamanho do texto que está dentro da tag SPAN */
+  margin-top: 10px; /*pra colocar o texto mais para baixo (próximo da tabela) */
+}
+
+/* ############################ SEÇÃO LATERAL ############################ */
+
+/* formatação da seção lateral */
+aside#lateral {
+  display: block; /* exibição da seção lateral em bloco */
+  width: 350px; /* largura da seção lateral */
+  float: right; /* seção lateral irá flutuar para o lado direito */
+  background-color: #dddddd; /* cor do fundo */
+  padding: 10px; /* espaçamento interno */
+  margin-top: 10px; /*pra colocar o aside lateral mais para baixo (para aparecer borda branca superior) */
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .5); /* cria uma sombra ao redor do aside lateral */
+}
+
+/* ##################### PÁGINA ASSOCIACAO-MEMBROS.HTML ##################### */
+
+/* espaço que separa cada notícia, ata e descrição das atribuições dos membros da associação */
+div#membros article, div#noticias article, div#documentos article {
+    margin-bottom: 1000px;
+}
+
+/* formatação dos H1 dos articles */
+div#membros article h1 {
+    font-size: 14pt;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 5px; /* espaçamento interno */
+    margin: 0px; /* espaçamento externo */
+}
+
+/* formatação dos H2 dos articles */
+div#membros article h2 {
+    font-size: 13pt;
+    color: #888888;
+    margin: 0px; /* espaçamento externo */
+}
+
+/* formatação para colocar a imagem à direita do texto */
+div#membros img.coloca-imagem-a-direita {
+    display: block; /* para exibir a imagem como um bloco */
+    float: right; /* flutuar a direita */
+    margin-left: 5px; /* espaçamento externo esquerdo entre a imagem e o texto */
+}
+/* ########################################################################## */
+
+
+/*
+formatação das tag P da tirar a indentação dentro do aside
+aside#lateral p.sem-indentacao {
+  text-indent:initial;
+}
+*/
+
+/* formatação dos H1 da seção aside lateral */
+aside#lateral h1 {
+  font-family: 'Bubblegum Sans', cursive; /* tipo da fonte */
+  font-size: 20pt; /* tamanho da fonte */
+  color: #606060; /* cor da fonte */
+  margin-top: 0px; /* para subir o título do aside lateral */
+}
+
+/* formatação dos H2 da seção aside lateral */
+aside#lateral h2 {
+  font-size: 13pt; /* tamanho da fonte */
+  color: #ffffff; /* cor da fonte */
+  background-color: #606060; /* cor do fundo */
+  padding: 5px; /* espaçamento interno */
+}
+
+/* ############################ RODAPÉ DO SITE ############################ */
+
+/* formatação do rodapé */
+footer#rodape {
+  clear: both; /* limpa a formatação de divisão feita pelo FLOAT */
+  border-top: 1px solid #606060; /* adiciona uma linha na parte superior do rodapé do site */
+}
+
+/* formatação dos parágrafos do rodapé */
+footer#rodape p {
+  text-indent: inherit; /* não herda a formatação de indentação já formatada anteriormente */
+  text-align: center; /* alinha texto do rodapé ao centro do página */
+}
